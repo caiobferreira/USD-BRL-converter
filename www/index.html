@@ -11,38 +11,32 @@
     </head>
     <body>
 
-        <div id ="containerApp">
+        <h1>Conversor de BRL/USD USD/BRL</h1>
 
-            <h1>Conversor de Dólar</h1>
+        <div class="container" id ="containerApp">
 
-
-        <div id="USD">
-
+<div class="box">
         <h2>USD para BRL</h2>
 
             <input type="text" pattern ="[0-9]*" id="usdValue" placeholder="USD"><br>
             <h3 id="brlCot"></h3>
 
-            <div class="buttonContainer">
-            <button id="convertUsdBtn">Converter!</button>
-             </div>
-        </div>
             
+            <button id="convertUsdBtn">Converter!</button>
+             
 
-        <div id="BRL">
-
-        <h2>BRL para USD</h2>
+            <h2>BRL para USD</h2>
 
             <input type="text" pattern ="[0-9]*" id="brlValue" placeholder="BRL"><br>
             <h3 id="usdCot"></h3>
 
-            <div class="buttonContainer">
+            
             <button id="convertBrlBtn">Converter!</button>
-             </div>
+             
             </div>
 
-             
         </div>
+        
         
         <script src="cordova.js"></script>
         <script src="js/index.js"></script>
