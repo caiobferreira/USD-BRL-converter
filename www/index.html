@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Conversor de Dólar</title>
+    </head>
+    <body>
+
+        <div id ="containerApp">
+
+            <h1>Conversor de Dólar</h1>
+
+
+        <div id="USD">
+
+        <h3>USD para BRL</h3>
+
+            <input type="text" pattern ="[0-9]*" id="usdValue" placeholder="USD"><br>
+            <label><span id="moedaB"></span></label>
+
+            <div class="buttonContainer">
+            <button id="convertUsdBtn">Converter!</button>
+             </div>
+        </div>
+            
+
+        <div id="BRL">
+
+        <h3>BRL para USD</h3>
+
+            <input type="text" pattern ="[0-9]*" id="brlValue" placeholder="BRL"><br>
+            <label><span id="resultValue"></span></label>
+
+            <div class="buttonContainer">
+            <button id="convertBrlBtn">Converter!</button>
+             </div>
+            </div>
+
+             
+        </div>
+        
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
