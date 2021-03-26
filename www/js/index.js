@@ -18,12 +18,12 @@ function onDeviceReady() {
           console.log("data", data);
           let cotacao = data.USD_BRL;
           moedaB.value = (cotacao * parseFloat(usdValue)).toFixed(2);
-          const resultado = moedaB.value;
+          let resultado = moedaB.value;
 
           if (usdValue == "") {
             console.log("this is empty");
             resultado = 0;
-            document.getElementById("usdCot").innerText = resultado;
+            document.getElementById("brlCot").innerText = resultado;
             return;
           }
 
@@ -40,6 +40,7 @@ function onDeviceReady() {
       let moedaB = {
         value: 0,
       };
+      
 
       let url =
         "https://free.currconv.com/api/v7/convert?q=BRL_USD&compact=ultra&apiKey=37d6b32bee7189bc371c";
